@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima App</title>
+    <link rel="stylesheet" href="clima.css" />
+  </head>
+  <body>
+    <header class="container-header">
+      <h1>🌤️ Clima App</h1>
+      <form id="search-form">
+        <input
+          id="get-city"
+          type="text"
+          placeholder="Ingresa una ciudad"
+          aria-label="Buscar ciudad"
+        />
+        <button type="submit">🔍 Buscar</button>
+      </form>
+    </header>
+
+    <main class="container-clima">
+      <section class="box-clima" id="weather-box">
+        <h2 id="city">Ciudad</h2>
+        <p class="temperature">--°C</p>
+        <img class="weather-icon" alt="Icono del clima" />
+        <p class="clima">Condición</p>
+        <p class="humedity">Humedad: --%</p>
+        <p class="wind">Viento: -- km/h</p>
+      </section>
+    </main>
+
+    <section class="box-information">
+      <h2>Pronóstico para los próximos 5 días</h2>
+      <ul id="forecast-list">
+        <li class="weather-week"></li>
+        <li class="weather-week"></li>
+        <li class="weather-week"></li>
+        <li class="weather-week"></li>
+        <li class="weather-week"></li>
+      </ul>
+    </section>
+
+    <footer class="container-footer">
+      <p>
+        🌍 Datos obtenidos de
+        <a href="https://openweathermap.org/" target="_blank">OpenWeather</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
