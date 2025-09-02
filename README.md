@@ -34,7 +34,7 @@
 
 ---
 
-## Screenshots
+## Screenshot
 
 ### Main Screen
 
